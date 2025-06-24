@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Profil Perusahaan Responsive</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body class="flex flex-col min-h-screen font-sans bg-gray-50 text-gray-800">
+
+  <header class="bg-white shadow-md sticky top-0 z-50 transition-all duration-300">
+  <nav class="container mx-auto flex flex-wrap items-center justify-between py-4 px-4 md:py-5 md:px-8 lg:px-12">
+    <!-- Logo -->
+    <div class="flex items-center gap-3">
+      <div class="bg-blue-600 rounded-full w-11 h-11 flex items-center justify-center text-white font-bold text-xl shadow-sm">
+        P
+      </div>
+      <span class="text-xl md:text-2xl font-semibold tracking-wide text-gray-800">PT. Prima Sejahtera</span>
+    </div>
+
+    <!-- Desktop Nav -->
+    <ul class="hidden md:flex items-center space-x-10 text-gray-700 font-medium">
+      <li><a href="#hero" class="hover:text-blue-600 transition-colors duration-300">Home</a></li>
+      <li><a href="#about" class="hover:text-blue-600 transition-colors duration-300">About</a></li>
+      <li><a href="#services" class="hover:text-blue-600 transition-colors duration-300">Services</a></li>
+      <li><a href="#contact" class="hover:text-blue-600 transition-colors duration-300">Contact</a></li>
+    </ul>
+
+    <!-- Hamburger Button -->
+    <button id="menu-toggle" aria-label="Toggle menu" aria-expanded="false"
+      class="md:hidden text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-600 rounded">
+      <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round" viewBox="0 0 24 24">
+        <path d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+    <ul class="flex flex-col px-6 py-4 space-y-3 text-gray-700 font-medium">
+      <li><a href="#hero" class="block hover:text-blue-600 transition">Home</a></li>
+      <li><a href="#about" class="block hover:text-blue-600 transition">About</a></li>
+      <li><a href="#services" class="block hover:text-blue-600 transition">Servicis</a></li>
+      <li><a href="#contact" class="block hover:text-blue-600 transition">C</a></li>
+    </ul>
+  </div>
+</header>
+
+
+
+  <!-- Hero / Banner -->
+  <section id="hero" class="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-24 px-6 md:px-12 flex flex-col md:flex-row items-center max-w-7xl mx-auto overflow-hidden">
+  <!-- Left Content -->
+  <div class="md:w-1/2 space-y-6 animate-fade-left">
+    <h1 class="text-4xl md:text-5xl font-extrabold leading-tight tracking-tight drop-shadow-md">
+      Mewujudkan Solusi <span class="text-yellow-300">Bisnis</span> Anda
+    </h1>
+    <p class="text-lg md:text-xl opacity-90 leading-relaxed">
+      Mitra terpercaya dengan layanan <span class="underline decoration-white/40">inovatif dan profesional</span>.
+    </p>
+    <a href="#contact"
+      class="inline-block bg-white text-blue-700 font-semibold rounded-full px-8 py-3 shadow-md hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-white transition duration-300">
+      Hubungi Kami
+    </a>
+  </div>
+
+  <!-- Right Image -->
+  <div class="md:w-1/2 mt-12 md:mt-0 flex justify-center animate-fade-up">
+    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=700&q=80"
+      alt="Banner Perusahaan" class="rounded-2xl shadow-2xl w-full max-w-md" />
+  </div>
+</section>
+
+
+  <!-- About Section -->
+  <section id="about" class="bg-white py-20 px-6 md:px-12">
+  <div class="container mx-auto max-w-5xl text-center animate-fade-up">
+    <h2 class="text-3xl md:text-4xl font-extrabold mb-6 text-gray-900 tracking-tight">
+      Tentang <span class="text-blue-600">Perusahaan</span>
+    </h2>
+    <div class="mx-auto w-24 h-1 bg-blue-600 rounded mb-10"></div>
+    <p class="text-lg md:text-xl text-gray-700 leading-relaxed max-w-3xl mx-auto">
+      <span class="font-semibold text-blue-700">PT. Prima Sejahtera</span> didirikan dengan tujuan menjadi penyedia layanan bisnis terdepan yang berfokus pada solusi digital yang <span class="italic text-indigo-600">inovatif</span> dan <span class="italic text-indigo-600">terpercaya</span>. 
+      <br class="hidden md:block mt-3" />
+      Dengan pengalaman lebih dari <span class="font-semibold">10 tahun</span>, kami bangga memberikan pelayanan terbaik yang meningkatkan efisiensi dan produktivitas klien kami secara maksimal.
+    </p>
+  </div>
+</section>
+
+
+  <!-- Services Section -->
+  <section id="services" class="bg-gray-50 py-20 px-6 md:px-12">
+  <div class="container mx-auto max-w-6xl text-center">
+    <h2 class="text-3xl md:text-4xl font-extrabold mb-6 text-gray-900 tracking-tight">
+      Layanan <span class="text-indigo-600">Kami</span>
+    </h2>
+    <div class="mx-auto w-24 h-1 bg-indigo-600 rounded mb-12"></div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+      <!-- Card 1 -->
+      <div class="group bg-white p-8 rounded-2xl shadow-md border border-gray-200 hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 animate-fade-up">
+        <div class="w-14 h-14 mx-auto mb-5 text-indigo-600">
+          <svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" viewBox="0 0 24 24">
+            <path d="M12 20h9M12 4h9M12 12h9M3 6h.01M3 18h.01M3 12h.01" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-3 text-gray-800">Konsultasi Digital</h3>
+        <p class="text-gray-600 leading-relaxed">Transformasi digital bisnis Anda dengan solusi yang tepat sasaran dan efisien.</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="group bg-white p-8 rounded-2xl shadow-md border border-gray-200 hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 animate-fade-up delay-100">
+        <div class="w-14 h-14 mx-auto mb-5 text-indigo-600">
+          <svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" viewBox="0 0 24 24">
+            <circle cx="12" cy="12" r="10"></circle>
+            <path d="M12 6v6l4 2"></path>
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-3 text-gray-800">Pengembangan Website</h3>
+        <p class="text-gray-600 leading-relaxed">Desain dan pembangunan website modern, cepat, dan mobile-friendly.</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="group bg-white p-8 rounded-2xl shadow-md border border-gray-200 hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 animate-fade-up delay-200">
+        <div class="w-14 h-14 mx-auto mb-5 text-indigo-600">
+          <svg fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" viewBox="0 0 24 24">
+            <path d="M3 7v10a4 4 0 004 4h10a4 4 0 004-4V7"></path>
+            <path d="M16 3v4"></path>
+            <path d="M8 3v4"></path>
+            <path d="M3 11h18"></path>
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold mb-3 text-gray-800">Pelatihan & Workshop</h3>
+        <p class="text-gray-600 leading-relaxed">Workshop interaktif dan pelatihan teknologi untuk SDM yang lebih unggul.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-white py-20 px-6">
+  <div class="container mx-auto max-w-5xl">
+    <h2 class="text-3xl md:text-4xl font-extrabold mb-8 text-gray-800 border-b-4 border-blue-600 inline-block pb-1">Kontak Kami</h2>
+    
+    <div class="flex flex-col md:flex-row gap-12 mt-10">
+      <!-- Formulir -->
+      <form id="contact-form" class="flex-1 bg-gray-50 p-8 rounded-2xl shadow-lg animate-fade-up" novalidate>
+        <div class="mb-6">
+          <label for="name" class="block font-medium text-gray-700 mb-2">Nama Lengkap</label>
+          <input type="text" id="name" name="name" required
+            class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+          <p class="text-red-600 text-sm mt-1 hidden" id="name-error">Nama tidak boleh kosong.</p>
+        </div>
+        <div class="mb-6">
+          <label for="email" class="block font-medium text-gray-700 mb-2">Email</label>
+          <input type="email" id="email" name="email" required
+            class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+          <p class="text-red-600 text-sm mt-1 hidden" id="email-error">Harap masukkan email yang valid.</p>
+        </div>
+        <div class="mb-6">
+          <label for="message" class="block font-medium text-gray-700 mb-2">Pesan</label>
+          <textarea id="message" name="message" rows="5" required
+            class="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+          <p class="text-red-600 text-sm mt-1 hidden" id="message-error">Pesan tidak boleh kosong.</p>
+        </div>
+        <button type="submit"
+          class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold shadow hover:bg-blue-700 transition-all focus:outline-none focus:ring-4 focus:ring-blue-300">
+          Kirim Pesan
+        </button>
+        <p class="mt-4 text-green-600 font-semibold hidden" id="success-message">Terima kasih! Pesan Anda telah terkirim.</p>
+      </form>
+
+      <!-- Info Kontak -->
+      <div class="flex-1 space-y-8 text-gray-700 animate-fade-up delay-200">
+        <div>
+          <h3 class="font-bold text-xl mb-3">Informasi Kontak</h3>
+          <ul class="space-y-2 text-base">
+            <li><strong>Alamat:</strong> Jl. Merdeka No. 123, Jakarta, Indonesia</li>
+            <li><strong>Telepon:</strong> +62 21 555 1234</li>
+            <li><strong>Email:</strong> info@primasejahtera.co.id</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="font-bold text-xl mb-3">Sosial Media</h3>
+          <div class="flex space-x-5 text-gray-600">
+            <a href="https://facebook.com" class="hover:text-blue-600 transition" aria-label="Facebook">
+              <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"><path d="..."/></svg>
+            </a>
+            <a href="https://twitter.com" class="hover:text-blue-500 transition" aria-label="Twitter">
+              <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"><path d="..."/></svg>
+            </a>
+            <a href="https://instagram.com" class="hover:text-pink-500 transition" aria-label="Instagram">
+              <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24"><path d="..."/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-8 mt-auto">
+  <div class="container mx-auto px-6 max-w-6xl flex flex-col md:flex-row justify-between items-center gap-6">
+    <!-- Teks Hak Cipta -->
+    <p class="text-sm text-center md:text-left">© 2024 <span class="font-semibold">PT. Prima Sejahtera</span>. All rights reserved.</p>
+
+    <!-- Ikon Sosial Media -->
+    <div class="flex space-x-5">
+      <a href="https://facebook.com" target="_blank" aria-label="Facebook"
+        class="hover:text-blue-500 transition">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M22.675 0h-21.35C.597 0 0 .598 0 1.333v21.334C0 23.402.597 24 1.325 24H12v-9.294H9.294V12H12V9.294c0-2.688 1.64-4.157 4.037-4.157 1.156 0 2.154.086 2.444.124v2.837h-1.682c-1.32 0-1.576.627-1.576 1.547V12h3.157l-.412 2.706H15.22V24h7.456c.728 0 1.325-.598 1.325-1.333V1.333A1.32 1.32 0 0022.675 0z" />
+        </svg>
+      </a>
+      <a href="https://twitter.com" target="_blank" aria-label="Twitter"
+        class="hover:text-blue-400 transition">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M23.954 4.569c-.885.39-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.724-.949.564-2.005.974-3.127 1.194-.897-.959-2.178-1.559-3.594-1.559-2.72 0-4.922 2.206-4.922 4.924 0 .39.045.765.126 1.124-4.09-.205-7.719-2.165-10.148-5.144-.424.729-.666 1.574-.666 2.476 0 1.71.87 3.216 2.195 4.099-.809-.026-1.57-.248-2.23-.616v.063c0 2.388 1.698 4.377 3.95 4.827-.413.111-.85.171-1.296.171-.317 0-.626-.03-.928-.086.627 1.956 2.444 3.377 4.6 3.417-1.69 1.324-3.812 2.115-6.114 2.115-.397 0-.788-.023-1.175-.067 2.179 1.394 4.768 2.209 7.557 2.209 9.054 0 14-7.496 14-13.986 0-.21 0-.423-.015-.633.961-.693 1.8-1.56 2.46-2.548l-.047-.02z" />
+        </svg>
+      </a>
+      <a href="https://instagram.com" target="_blank" aria-label="Instagram"
+        class="hover:text-pink-500 transition">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 2A3.75 3.75 0 004 7.75v8.5A3.75 3.75 0 007.75 20h8.5a3.75 3.75 0 003.75-3.75v-8.5A3.75 3.75 0 0016.25 4h-8.5zM12 7a5 5 0 110 10 5 5 0 010-10zm0 2.5a2.5 2.5 0 100 5 2.5 2.5 0 000-5zm4.75-2.625a1.125 1.125 0 11-2.25 0 1.125 1.125 0 012.25 0z" />
+        </svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+
+  <!-- Toggle Mobile Menu Script -->
+  <script src="js/js.js"></script>
+</body>
+</html>

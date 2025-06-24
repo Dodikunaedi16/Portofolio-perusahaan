@@ -1,0 +1,101 @@
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.slide-in {
+  animation: slideIn 1.2s ease forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fade-up {
+  animation: fadeUp 0.9s ease-out both;
+}
+.animate-fade-up.delay-100 {
+  animation-delay: 0.1s;
+}
+.animate-fade-up.delay-200 {
+  animation-delay: 0.2s;
+}
+
+@keyframes fadeSlideLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.animate-fade-left {
+  animation: fadeSlideLeft 0.8s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out both;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.animate-slide-down {
+  animation: slideDown 0.3s ease-out forwards;
+}
+
+.service-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+
+button:focus,
+a:focus {
+  outline: 3px solid #3b82f6;
+  outline-offset: 2px;
+}
+button,
+a {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.social-icon {
+  color: #6b7280;
+  transition: color 0.3s ease;
+}
+.social-icon:hover {
+  color: #3b82f6;
+}
